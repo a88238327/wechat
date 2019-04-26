@@ -1,0 +1,55 @@
+package xml;
+
+public class news {
+
+	private String ToUserName;
+	private String FromUserName;
+	private String CreateTime;
+	private String MsgType;
+	private String ArticleCount;
+	private articles Articles;
+	public news(String ToUserName,String FromUserName,String CreateTime,String MsgType,String ArticleCount,articles Articles) {
+		this.ToUserName="![CDATA["+ToUserName+"]]";
+		this.FromUserName="![CDATA["+FromUserName+"]]";
+		this.CreateTime=CreateTime;
+		this.MsgType="![CDATA["+MsgType+"]]";
+		this.ArticleCount=ArticleCount;
+		this.Articles=Articles;
+	}
+	public String getToUserName() {
+		return ToUserName;
+	}
+	public void setToUserName(String toUserName) {
+		ToUserName = toUserName;
+	}
+	public String getFromUserName() {
+		return FromUserName;
+	}
+	public void setFromUserName(String fromUserName) {
+		FromUserName = fromUserName;
+	}
+	public String getCreateTime() {
+		return CreateTime;
+	}
+	public void setCreateTime(String createTime) {
+		CreateTime = createTime;
+	}
+	public String getMsgType() {
+		return MsgType;
+	}
+	public void setMsgType(String msgType) {
+		MsgType = msgType;
+	}
+	public String getArticleCount() {
+		return ArticleCount;
+	}
+	public void setArticleCount(String articleCount) {
+		ArticleCount = articleCount;
+	}
+	public articles getArticles() {
+		return Articles;
+	}
+	public void setArticles(articles articles) {
+		Articles = articles;
+	}
+}
